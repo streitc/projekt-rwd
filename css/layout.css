@@ -1,0 +1,58 @@
+/*  ==================================================================
+        Stylesheet for layout settings
+            file: layout.css
+            author: Carolin Streit
+            date: 15.08.2024
+    ================================================================== */
+
+/**
+    *   1. base page layout
+    */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .block {
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .block {
+        width: 50%;
+        float: left;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .block {
+        width: 50%;
+        float: left;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+/**
+    *   2. header
+    */
+
+
+/**
+    *   3. main
+    */
+
+/**
+    *   4. footer
+    */
+
+
+/*  ==================================================================
+        end of layout.css
+    ================================================================== */

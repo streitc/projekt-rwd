@@ -1,0 +1,10 @@
+/*  ==================================================================
+        Stylesheet for responsive webdesign project
+            file: style.css
+            author: Carolin Streit
+            date: 15.08.2024
+    ================================================================== */
+
+    @import url("css/base.css");
+    @import url("css/layout.css");
+    @import url("css/content.css");

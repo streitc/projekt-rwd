@@ -1,0 +1,128 @@
+/*  ==================================================================
+        Stylesheet for content settings
+            file: content.css
+            author: Carolin Streit
+            date: 15.08.2024
+    ================================================================== */
+
+.border-block {
+    border: 2px solid darkred;
+    margin: 2px;
+    padding: 5px;
+}
+
+.small-block {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 600px) {
+    .stats {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .saving-throws {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .stats {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .saving-throws {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .base-info {
+        display: flex;
+        align-items: center;
+    }
+
+    .proficiency-block,
+    .movement-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-grow: 1;
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .stats {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+
+    .base-info {
+        display: flex;
+        align-items: center;
+    }
+
+    .saving-throws {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+.char-top {
+    background-color: rgb(26, 41, 41);
+    color: white;
+}
+
+
+
+.stat-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.stat-txt,
+.stat-mod,
+.stat-stat {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.stat-mod {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.stat-stat {
+    border: 2px solid darkred;
+    border-radius: 20px;
+    width: 40px;
+}
+
+.save-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.save-prof,
+.save-txt,
+.save-mod {
+    margin: 2px;
+}
+
+/*  ==================================================================
+        end of content.css
+    ================================================================== */

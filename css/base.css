@@ -1,0 +1,82 @@
+/*  ==================================================================
+        Stylesheet for base css settings
+            file: base.css
+            author: Carolin Streit
+            date: 15.08.2024
+    ================================================================== */
+
+/**
+    *   1. Global settings
+    */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+figure,
+blockquote {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+blockquote {
+    margin-top: 0;
+}
+
+/**
+    *   2. base settings for fonts and texts
+    */
+
+
+/**
+    *   3. useful base classes
+    */
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0) !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    margin: -1px !important;
+}
+
+.float-wrap {
+    overflow: hidden
+}
+
+@supports(display: flow-root) {
+    .float-wrap {
+        display: flow-root;
+        overflow: initial;
+    }
+}
+
+/*  ==================================================================
+        end of base.css
+    ================================================================== */

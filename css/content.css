@@ -30,15 +30,10 @@
         width: 32%;
         justify-content: center;
     }
-
-    /*
-    .saving-throws {
-        display: grid;
-        grid-template-columns: auto auto;
-    } */
 }
 
 @media only screen and (min-width: 600px) {
+
     .stats {
         display: inline-flex;
         justify-content: center;
@@ -53,15 +48,11 @@
         justify-content: center;
     }
 
-    /*
-    .saving-throws {
-        display: grid;
-        grid-template-columns: auto auto;
-    } */
-
     .row {
         display: flex;
         flex-wrap: wrap;
+        gap: 4px;
+        justify-content: center;
     }
 
     .base-info {
@@ -77,6 +68,17 @@
         text-align: center;
         flex-grow: 1;
     }
+
+    .saving-throws, .senses {
+        width: 280px;
+        height: 200px;
+    }
+
+    .skills {
+        width: 280px;
+    }
+
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -87,6 +89,15 @@
     .stat-block-flex {
         width: 16%;
         justify-content: center;
+    }
+
+    .saving-throws, .senses {
+        width: 280px;
+        height: 200px;
+    }
+
+    .skills {
+        width: 280px;
     }
 }
 
@@ -111,7 +122,7 @@
     .base-info {
         display: flex;
         align-items: center;
-        width: 25%;
+        width: 24%;
         height: auto;
     }
 
@@ -123,11 +134,6 @@
     .health-block {
         width: 75%;
     }
-
-    /* .saving-throws {
-        display: grid;
-        grid-template-columns: auto auto;
-    } */
 }
 
 .char-top {
@@ -166,6 +172,27 @@
     width: 40px;
 }
 
+.subsections {
+    position: relative;
+    height: 770px;
+    display: flex;
+}
+
+.senses {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.save-block-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.save-block {
+    width: 50%;
+    justify-content: center;
+}
+
 .save-block {
     display: flex;
     flex-direction: row;
@@ -174,11 +201,22 @@
     flex-grow: 1;
 }
 
+.passives {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
 .save-prof,
 .save-txt,
 .save-mod {
     margin: 2px;
 }
+
+/* .subsection {
+    position: absolute;
+} */
 
 /*  ==================================================================
         end of content.css

@@ -30,6 +30,12 @@
         width: 32%;
         justify-content: center;
     }
+
+    .health-info {
+        visibility: collapse;
+        width: 0;
+        height: 0;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -57,16 +63,22 @@
 
     .base-info {
         display: flex;
-        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4px;
+        width: 49%;
     }
 
-    .proficiency-block,
-    .movement-block {
+    .base-info-flex {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        flex-grow: 1;
+        width: 49%;
+        justify-content: center;
+    }
+
+    .health-info {
+        visibility: collapse;
+        width: 0;
+        height: 0;
     }
 
     .saving-throws, .senses {
@@ -99,6 +111,11 @@
     .skills {
         width: 280px;
     }
+
+    .health-info {
+        visibility: collapse;
+        width: 0;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -107,6 +124,7 @@
         max-width: 1400px;
         align-items: center;
         margin: auto;
+        flex-direction: row-reverse;
     }
 
     .stats {
@@ -121,18 +139,43 @@
 
     .base-info {
         display: flex;
-        align-items: center;
-        width: 24%;
-        height: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4px;
+        width: 20%;
+    }
+
+    .base-info-flex {
+        display: flex;
+        width: 49%;
+        justify-content: center;
     }
 
     .health-info {
         display: flex;
-        width: 25%;
+        width: 29%;
+        visibility: visible;
+        height: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4px;
     }
 
-    .health-block {
-        width: 75%;
+    .health-block-flex {
+        display: flex;
+        width: 74%;
+        justify-content: center;
+    }
+
+    .proficiency-block-flex {
+        width: 25%;
+        justify-content: center;
+    }
+
+    .health {
+        visibility: hidden;
+        width: 0;
+        height: 0;
     }
 }
 
@@ -170,6 +213,22 @@
     border: 2px solid darkred;
     border-radius: 20px;
     width: 40px;
+}
+
+.proficiency-block, .movement-block {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.inspiration-block {
+    width: 82px;
+}
+
+.health-block {
+    width: 220px;
 }
 
 .subsections {

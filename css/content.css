@@ -14,7 +14,21 @@
 
 .small-block {
     display: flex;
-    /* flex-wrap: nowrap; */
+}
+
+.char-top {
+    display: flex;
+    gap: 5px;
+}
+
+.char-info {
+    width: 75%;
+}
+
+.health {
+    border: 1px solid darkred;
+    border-radius: 4px;
+    padding: 5px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -81,7 +95,8 @@
         height: 0;
     }
 
-    .saving-throws, .senses {
+    .saving-throws,
+    .senses {
         width: 280px;
         height: 200px;
     }
@@ -94,6 +109,7 @@
 }
 
 @media only screen and (min-width: 768px) {
+
     .stats {
         width: 100%;
     }
@@ -103,7 +119,8 @@
         justify-content: center;
     }
 
-    .saving-throws, .senses {
+    .saving-throws,
+    .senses {
         width: 280px;
         height: 200px;
     }
@@ -116,6 +133,10 @@
         visibility: collapse;
         width: 0;
     }
+
+    .actions {
+        width: 623px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -124,6 +145,9 @@
         max-width: 1400px;
         align-items: center;
         margin: auto;
+    }
+
+    .row1 {
         flex-direction: row-reverse;
     }
 
@@ -177,11 +201,30 @@
         width: 0;
         height: 0;
     }
+
+    .subsection-flex{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 280px;
+        row-gap: 5px;
+        /* justify-items: center; */
+        /* margin: auto; */
+    }
+
+    .actions {
+        width: 623px;
+    }
 }
 
 .char-top {
     background-color: rgb(26, 41, 41);
     color: white;
+}
+
+.char-icon {
+    max-width: 100px;
+    border: 2px solid darkred;
 }
 
 
@@ -215,7 +258,8 @@
     width: 40px;
 }
 
-.proficiency-block, .movement-block {
+.proficiency-block,
+.movement-block {
     width: 120px;
     display: flex;
     flex-direction: column;
@@ -273,9 +317,34 @@
     margin: 2px;
 }
 
-/* .subsection {
-    position: absolute;
-} */
+.subsection-actions {
+    overflow-x: auto;
+}
+
+td {
+    height: 1.7rem;
+}
+
+.attack-type {
+    font-size: x-small;
+}
+
+.disadvantage-range {
+    font-size: x-small;
+    color: grey;
+}
+
+.attack-notes {
+    font-size: smaller;
+    color: grey;
+    width: 33%;
+}
+
+.boxed-item {
+    border: 1px solid gray;
+    border-radius: 4px;
+    text-align: center;
+}
 
 /*  ==================================================================
         end of content.css

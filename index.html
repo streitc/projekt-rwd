@@ -34,12 +34,17 @@
     <div class="row1 row">
         <div class="health-info block">
             <div class="inspiration-block-flex">
-                <div class="inspiration-block border-block">Inspiration</div>
+                <div class="inspiration-block border-block">
+                    <input class="inspiration-check" type="checkbox">
+                    <span>Inspiration</span>
+                </div>
             </div>
             <div class="health-block-flex">
                 <div class="health-block border-block">
-                    <input class="hp-input" value="49">
-                    <span>/49</span>
+                    <div class="health-line">
+                        <input class="hp-input" value="49">
+                        <span>/49</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,29 +52,43 @@
         <div class="base-info block">
             <div class="base-info-flex">
                 <div class="proficiency-block border-block">
-                    <div class="proficiency-txt">Proficiency</div>
-                    <div class="proficiency-mod">+3</div>
-                    <div class="proficiency-bonus-txt">Bonus</div>
+                    <div class="proficiency-txt">
+                        <h5>Proficiency</h5>
+                    </div>
+                    <div class="proficiency-mod big-num">+3</div>
+                    <div class="proficiency-bonus-txt">
+                        <h5>Bonus</h5>
+                    </div>
                 </div>
             </div>
             <div class="base-info-flex">
                 <div class="movement-block border-block">
-                    <div class="movement-txt">Walking</div>
-                    <div class="movement-speed">30ft</div>
-                    <div class="movement-txt">Speed</div>
+                    <div class="movement-txt">
+                        <h6>Walking</h6>
+                    </div>
+                    <div class="movement-speed big-num">30ft</div>
+                    <div class="movement-txt">
+                        <h5>Speed</h5>
+                    </div>
                 </div>
             </div>
-            <div class="base-info-flex">
+            <div class="base-info-flex invisible-flex">
                 <div class="initiative border-block">
                     <div class="stat-mod">+3</div>
-                    <div>Initiative</div>
+                    <div>
+                        <h5>Initiative</h5>
+                    </div>
                 </div>
             </div>
-            <div class="base-info-flex">
+            <div class="base-info-flex invisible-flex">
                 <div class="armor-class border-block">
-                    <div>Armor</div>
-                    <div>15</div>
-                    <div>Class</div>
+                    <div>
+                        <h6>Armor</h6>
+                    </div>
+                    <div class="big-num">15</div>
+                    <div>
+                        <h6>Class</h6>
+                    </div>
                 </div>
             </div>
         </div>
@@ -126,12 +145,12 @@
                 <section class="saving-throws block border-block">
                     <div class="save-block-flex">
                         <div class="str save-block">
-                            <div class="str-prof save-prof">x</div>
+                            <div class="str-prof save-prof">o</div>
                             <div class="str-save-txt save-txt">STR</div>
                             <div class="str-save-mod save-mod">+3</div>
                         </div>
                         <div class="dex save-block">
-                            <div class="dex-prof save-prof">x</div>
+                            <div class="dex-prof save-prof">o</div>
                             <div class="dex-save-txt save-txt">DEX</div>
                             <div class="dex-save-mod save-mod">+6</div>
                         </div>
@@ -177,33 +196,33 @@
             </div>
 
             <div class="subsection-proficiencies subsection">
-                <section class="proficencies-traning block border-block">
+                <section class="proficiencies-training block border-block">
                     <div>
                         <div>
-                            <h3>Armor</h3>
+                            <h4>Armor</h4>
                         </div>
-                        <div>Light Armor, Medium Armor, Shields</div>
+                        <div class="training-text">Light Armor, Medium Armor, Shields</div>
                         <hr>
                     </div>
                     <div>
                         <div>
-                            <h3>Weapons</h3>
+                            <h4>Weapons</h4>
                         </div>
-                        <div>Martial Weapons, Simple Weapons</div>
+                        <div class="training-text">Martial Weapons, Simple Weapons</div>
                         <hr>
                     </div>
                     <div>
                         <div>
-                            <h3>Tools</h3>
+                            <h4>Tools</h4>
                         </div>
-                        <div>Cartographer's Tools, Pan Flute</div>
+                        <div class="training-text">Cartographer's Tools, Pan Flute</div>
                         <hr>
                     </div>
                     <div>
                         <div>
-                            <h3>Languages</h3>
+                            <h4>Languages</h4>
                         </div>
-                        <div>Celestial, Common, Elvish</div>
+                        <div class="training-text">Celestial, Common, Elvish</div>
                     </div>
                 </section>
             </div>
@@ -220,133 +239,149 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td>DEX</td>
+                        <td class="skill-mod">DEX</td>
                         <td>Acrobatics</td>
                         <td class="boxed-item">+3</td>
                     </tr>
                     <tr>
-                        <td>x</td>
-                        <td>WIS</td>
+                        <td>o</td>
+                        <td class="skill-mod">WIS</td>
                         <td>Animal Handling</td>
                         <td class="boxed-item">+6</td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>INT</td>
+                        <td class="skill-mod">INT</td>
                         <td>Arcana</td>
                         <td class="boxed-item">+1</td>
                     </tr>
                     <tr>
-                        <td>x</td>
-                        <td>STR</td>
+                        <td>o</td>
+                        <td class="skill-mod">STR</td>
                         <td>Athletics</td>
                         <td class="boxed-item">+3</td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>CHA</td>
+                        <td class="skill-mod">CHA</td>
                         <td>Deception</td>
                         <td class="boxed-item">+0</td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>INT</td>
+                        <td class="skill-mod">INT</td>
                         <td>History</td>
                         <td class="boxed-item">+1</td>
                     </tr>
                     <tr>
-                        <td>x</td>
-                        <td>WIS</td>
+                        <td>o</td>
+                        <td class="skill-mod">WIS</td>
                         <td>Insight</td>
                         <td class="boxed-item">+6</td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>CHA</td>
+                        <td class="skill-mod">CHA</td>
                         <td>Intimidation</td>
                         <td class="boxed-item">+0</td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>INT</td>
+                        <td class="skill-mod">INT</td>
                         <td>Investigation</td>
                         <td class="boxed-item">+1</td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>WIS</td>
+                        <td class="skill-mod">WIS</td>
                         <td>Medicine</td>
                         <td class="boxed-item">+3</td>
                     </tr>
                     <tr>
-                        <td>x</td>
-                        <td>INT</td>
+                        <td>o</td>
+                        <td class="skill-mod">INT</td>
                         <td>Nature</td>
                         <td class="boxed-item">+4</td>
                     </tr>
                     <tr>
-                        <td>x</td>
-                        <td>WIS</td>
+                        <td>o</td>
+                        <td class="skill-mod">WIS</td>
                         <td>Perception</td>
                         <td class="boxed-item">+6</td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>CHA</td>
+                        <td class="skill-mod">CHA</td>
                         <td>Performance</td>
                         <td class="boxed-item">+0</td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>CHA</td>
+                        <td class="skill-mod">CHA</td>
                         <td>Persuasion</td>
                         <td class="boxed-item">+0</td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>INT</td>
+                        <td class="skill-mod">INT</td>
                         <td>Religion</td>
                         <td class="boxed-item">+1</td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>DEX</td>
+                        <td class="skill-mod">DEX</td>
                         <td>Sleight of Hand</td>
                         <td class="boxed-item">+3</td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>DEX</td>
+                        <td class="skill-mod">DEX</td>
                         <td>Stealth</td>
                         <td class="boxed-item">+3</td>
                     </tr>
                     <tr>
-                        <td>X</td>
-                        <td>WIS</td>
+                        <td>x</td>
+                        <td class="skill-mod">WIS</td>
                         <td>Survival</td>
                         <td class="boxed-item">+9</td>
                     </tr>
                 </table>
+                <br>
+                <div>
+                    <h4>Legend</h4>
+                    <div>o - Proficiency</div>
+                    <div>x - Expertise</div>
+                </div>
             </section>
         </div>
         <div class="subsection-right">
             <div class="subsection-combat">
                 <div class="initiative-block block border-block">
-                    <div>Initiative</div>
+                    <div>
+                        <h5>Initiative</h5>
+                    </div>
                     <div class="stat-mod">+3</div>
                 </div>
                 <div class="ac-block block border-block">
-                    <div>Armor</div>
-                    <div>15</div>
-                    <div>Class</div>
+                    <div>
+                        <h6>Armor</h6>
+                    </div>
+                    <div class="big-num">15</div>
+                    <div>
+                        <h6>Class</h6>
+                    </div>
                 </div>
                 <div class="defenses-conditions-block block border-block">
                     <div class="defenses">
-                        <div>Defenses</div>
+                        <div>
+                            <h5>Defenses</h5>
+                        </div>
                         <div>Necrotic, Radiant</div>
                     </div>
                     <div class="conditions">
-                        <div>Conditions</div>
+                        <div>
+                            <h5>Conditions</h5>
+                        </div>
                     </div>
                 </div>
             </div>

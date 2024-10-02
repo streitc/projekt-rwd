@@ -1,3 +1,21 @@
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+
+
+
 /**
  * Function injects specified HTML file to specified HTML 
  * node of the current file
@@ -6,7 +24,7 @@
  * @param elem - an HTML element to which this content will 
  * be injected
  */
-async function injectHTML(filePath,elem) {
+async function injectHTML(filePath, elem) {
     try {
         const response = await fetch(filePath);
         if (!response.ok) {
@@ -46,9 +64,9 @@ async function injectHTML(filePath,elem) {
  */
 function injectAll() {
     document.querySelectorAll("div[include]")
-            .forEach((elem) => {
-                injectHTML(elem.getAttribute("include"),elem);
-    })
+        .forEach((elem) => {
+            injectHTML(elem.getAttribute("include"), elem);
+        })
 }
 
 injectAll();

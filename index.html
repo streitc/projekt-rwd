@@ -7,11 +7,9 @@
     <title>Khaani Amakiir's Character Sheet</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='index.js'></script>
 </head>
 
 <body>
-
     <div class="char-top">
         <div class="icon"><img src="header/1581111423-62805453.jpeg" class="char-icon"></div>
         <div class="char-info">
@@ -141,219 +139,232 @@
 
     <div class="row2 row">
         <div class="subsection-flex">
-            <div class="subsection-saving-throws subsection">
-                <section class="saving-throws block border-block">
-                    <div class="save-block-flex">
-                        <div class="str save-block">
-                            <div class="str-prof save-prof">o</div>
-                            <div class="str-save-txt save-txt">STR</div>
-                            <div class="str-save-mod save-mod">+3</div>
+            <button class="collapsible">Saving Throws</button>
+            <div class="content">
+                <div class="subsection-saving-throws subsection ">
+                    <section class="saving-throws block border-block">
+                        <div class="save-block-flex">
+                            <div class="str save-block">
+                                <div class="str-prof save-prof">o</div>
+                                <div class="str-save-txt save-txt">STR</div>
+                                <div class="str-save-mod save-mod">+3</div>
+                            </div>
+                            <div class="dex save-block">
+                                <div class="dex-prof save-prof">o</div>
+                                <div class="dex-save-txt save-txt">DEX</div>
+                                <div class="dex-save-mod save-mod">+6</div>
+                            </div>
+                            <div class="con save-block">
+                                <div class="con-prof save-prof"></div>
+                                <div class="con-save-txt save-txt">CON</div>
+                                <div class="con-save-mod save-mod">+1</div>
+                            </div>
+                            <div class="int save-block">
+                                <div class="int-prof save-prof"></div>
+                                <div class="int-save-txt save-txt">INT</div>
+                                <div class="int-save-mod save-mod">+1</div>
+                            </div>
+                            <div class="wis save-block">
+                                <div class="wis-prof save-prof"></div>
+                                <div class="wis-save-txt save-txt">WIS</div>
+                                <div class="wis-save-mod save-mod">+3</div>
+                            </div>
+                            <div class="cha save-block">
+                                <div class="cha-prof save-prof"></div>
+                                <div class="cha-save-txt save-txt">CHA</div>
+                                <div class="cha-save-mod save-mod">+0</div>
+                            </div>
                         </div>
-                        <div class="dex save-block">
-                            <div class="dex-prof save-prof">o</div>
-                            <div class="dex-save-txt save-txt">DEX</div>
-                            <div class="dex-save-mod save-mod">+6</div>
-                        </div>
-                        <div class="con save-block">
-                            <div class="con-prof save-prof"></div>
-                            <div class="con-save-txt save-txt">CON</div>
-                            <div class="con-save-mod save-mod">+1</div>
-                        </div>
-                        <div class="int save-block">
-                            <div class="int-prof save-prof"></div>
-                            <div class="int-save-txt save-txt">INT</div>
-                            <div class="int-save-mod save-mod">+1</div>
-                        </div>
-                        <div class="wis save-block">
-                            <div class="wis-prof save-prof"></div>
-                            <div class="wis-save-txt save-txt">WIS</div>
-                            <div class="wis-save-mod save-mod">+3</div>
-                        </div>
-                        <div class="cha save-block">
-                            <div class="cha-prof save-prof"></div>
-                            <div class="cha-save-txt save-txt">CHA</div>
-                            <div class="cha-save-mod save-mod">+0</div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <div class="subsection-senses subsection">
-                <section class="senses block border-block">
-                    <div class="passive-perception passives">
-                        <div class="passive-perception-mod senses-mod">16</div>
-                        <div class="passive-perception-txt senses-txt">Passive Perception</div>
-                    </div>
-                    <div class="passive-investigation passives">
-                        <div class="passive-investigation-mod senses-mod">11</div>
-                        <div class="passive-investigation-txt senses-txt">Passive Investigation</div>
-                    </div>
-                    <div class="passive-insight passives">
-                        <div class="passive-insight-mod senses-mod">16</div>
-                        <div class="passive-insight-txt senses-txt">Passive Insight</div>
-                    </div>
-                </section>
-            </div>
-
-            <div class="subsection-proficiencies subsection">
-                <section class="proficiencies-training block border-block">
-                    <div>
-                        <div>
-                            <h4>Armor</h4>
-                        </div>
-                        <div class="training-text">Light Armor, Medium Armor, Shields</div>
-                        <hr>
-                    </div>
-                    <div>
-                        <div>
-                            <h4>Weapons</h4>
-                        </div>
-                        <div class="training-text">Martial Weapons, Simple Weapons</div>
-                        <hr>
-                    </div>
-                    <div>
-                        <div>
-                            <h4>Tools</h4>
-                        </div>
-                        <div class="training-text">Cartographer's Tools, Pan Flute</div>
-                        <hr>
-                    </div>
-                    <div>
-                        <div>
-                            <h4>Languages</h4>
-                        </div>
-                        <div class="training-text">Celestial, Common, Elvish</div>
-                    </div>
-                </section>
-            </div>
-        </div>
-
-        <div class="subsection-skills subsection">
-            <section class="skills block border-block">
-                <table>
-                    <tr>
-                        <th>Prof</th>
-                        <th>Mod</th>
-                        <th>Skill</th>
-                        <th>Bonus</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td class="skill-mod">DEX</td>
-                        <td>Acrobatics</td>
-                        <td class="boxed-item">+3</td>
-                    </tr>
-                    <tr>
-                        <td>o</td>
-                        <td class="skill-mod">WIS</td>
-                        <td>Animal Handling</td>
-                        <td class="boxed-item">+6</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td class="skill-mod">INT</td>
-                        <td>Arcana</td>
-                        <td class="boxed-item">+1</td>
-                    </tr>
-                    <tr>
-                        <td>o</td>
-                        <td class="skill-mod">STR</td>
-                        <td>Athletics</td>
-                        <td class="boxed-item">+3</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td class="skill-mod">CHA</td>
-                        <td>Deception</td>
-                        <td class="boxed-item">+0</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td class="skill-mod">INT</td>
-                        <td>History</td>
-                        <td class="boxed-item">+1</td>
-                    </tr>
-                    <tr>
-                        <td>o</td>
-                        <td class="skill-mod">WIS</td>
-                        <td>Insight</td>
-                        <td class="boxed-item">+6</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td class="skill-mod">CHA</td>
-                        <td>Intimidation</td>
-                        <td class="boxed-item">+0</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td class="skill-mod">INT</td>
-                        <td>Investigation</td>
-                        <td class="boxed-item">+1</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td class="skill-mod">WIS</td>
-                        <td>Medicine</td>
-                        <td class="boxed-item">+3</td>
-                    </tr>
-                    <tr>
-                        <td>o</td>
-                        <td class="skill-mod">INT</td>
-                        <td>Nature</td>
-                        <td class="boxed-item">+4</td>
-                    </tr>
-                    <tr>
-                        <td>o</td>
-                        <td class="skill-mod">WIS</td>
-                        <td>Perception</td>
-                        <td class="boxed-item">+6</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td class="skill-mod">CHA</td>
-                        <td>Performance</td>
-                        <td class="boxed-item">+0</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td class="skill-mod">CHA</td>
-                        <td>Persuasion</td>
-                        <td class="boxed-item">+0</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td class="skill-mod">INT</td>
-                        <td>Religion</td>
-                        <td class="boxed-item">+1</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td class="skill-mod">DEX</td>
-                        <td>Sleight of Hand</td>
-                        <td class="boxed-item">+3</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td class="skill-mod">DEX</td>
-                        <td>Stealth</td>
-                        <td class="boxed-item">+3</td>
-                    </tr>
-                    <tr>
-                        <td>x</td>
-                        <td class="skill-mod">WIS</td>
-                        <td>Survival</td>
-                        <td class="boxed-item">+9</td>
-                    </tr>
-                </table>
-                <br>
-                <div>
-                    <h4>Legend</h4>
-                    <div>o - Proficiency</div>
-                    <div>x - Expertise</div>
+                    </section>
                 </div>
-            </section>
+            </div>
+
+            <button class="collapsible">Senses</button>
+            <div class="content">
+                <div class="subsection-senses subsection">
+                    <section class="senses block border-block">
+                        <div class="passive-perception passives">
+                            <div class="passive-perception-mod senses-mod">16</div>
+                            <div class="passive-perception-txt senses-txt">Passive Perception</div>
+                        </div>
+                        <div class="passive-investigation passives">
+                            <div class="passive-investigation-mod senses-mod">11</div>
+                            <div class="passive-investigation-txt senses-txt">Passive Investigation</div>
+                        </div>
+                        <div class="passive-insight passives">
+                            <div class="passive-insight-mod senses-mod">16</div>
+                            <div class="passive-insight-txt senses-txt">Passive Insight</div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <button class="collapsible">Proficiencies</button>
+            <div class="content">
+                <div class="subsection-proficiencies subsection">
+                    <section class="proficiencies-training block border-block">
+                        <div>
+                            <div>
+                                <h4>Armor</h4>
+                            </div>
+                            <div class="training-text">Light Armor, Medium Armor, Shields</div>
+                            <hr>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>Weapons</h4>
+                            </div>
+                            <div class="training-text">Martial Weapons, Simple Weapons</div>
+                            <hr>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>Tools</h4>
+                            </div>
+                            <div class="training-text">Cartographer's Tools, Pan Flute</div>
+                            <hr>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>Languages</h4>
+                            </div>
+                            <div class="training-text">Celestial, Common, Elvish</div>
+                        </div>
+                    </section>
+                </div>
+            </div>
         </div>
+
+        <button class="collapsible">Skills</button>
+        <div class="content">
+            <div class="subsection-skills subsection">
+                <section class="skills block border-block">
+                    <table>
+                        <tr>
+                            <th>Prof</th>
+                            <th>Mod</th>
+                            <th>Skill</th>
+                            <th>Bonus</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="skill-mod">DEX</td>
+                            <td>Acrobatics</td>
+                            <td class="boxed-item">+3</td>
+                        </tr>
+                        <tr>
+                            <td>o</td>
+                            <td class="skill-mod">WIS</td>
+                            <td>Animal Handling</td>
+                            <td class="boxed-item">+6</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="skill-mod">INT</td>
+                            <td>Arcana</td>
+                            <td class="boxed-item">+1</td>
+                        </tr>
+                        <tr>
+                            <td>o</td>
+                            <td class="skill-mod">STR</td>
+                            <td>Athletics</td>
+                            <td class="boxed-item">+3</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="skill-mod">CHA</td>
+                            <td>Deception</td>
+                            <td class="boxed-item">+0</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="skill-mod">INT</td>
+                            <td>History</td>
+                            <td class="boxed-item">+1</td>
+                        </tr>
+                        <tr>
+                            <td>o</td>
+                            <td class="skill-mod">WIS</td>
+                            <td>Insight</td>
+                            <td class="boxed-item">+6</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="skill-mod">CHA</td>
+                            <td>Intimidation</td>
+                            <td class="boxed-item">+0</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="skill-mod">INT</td>
+                            <td>Investigation</td>
+                            <td class="boxed-item">+1</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="skill-mod">WIS</td>
+                            <td>Medicine</td>
+                            <td class="boxed-item">+3</td>
+                        </tr>
+                        <tr>
+                            <td>o</td>
+                            <td class="skill-mod">INT</td>
+                            <td>Nature</td>
+                            <td class="boxed-item">+4</td>
+                        </tr>
+                        <tr>
+                            <td>o</td>
+                            <td class="skill-mod">WIS</td>
+                            <td>Perception</td>
+                            <td class="boxed-item">+6</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="skill-mod">CHA</td>
+                            <td>Performance</td>
+                            <td class="boxed-item">+0</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="skill-mod">CHA</td>
+                            <td>Persuasion</td>
+                            <td class="boxed-item">+0</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="skill-mod">INT</td>
+                            <td>Religion</td>
+                            <td class="boxed-item">+1</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="skill-mod">DEX</td>
+                            <td>Sleight of Hand</td>
+                            <td class="boxed-item">+3</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="skill-mod">DEX</td>
+                            <td>Stealth</td>
+                            <td class="boxed-item">+3</td>
+                        </tr>
+                        <tr>
+                            <td>x</td>
+                            <td class="skill-mod">WIS</td>
+                            <td>Survival</td>
+                            <td class="boxed-item">+9</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div>
+                        <h4>Legend</h4>
+                        <div>o - Proficiency</div>
+                        <div>x - Expertise</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
         <div class="subsection-right">
             <div class="subsection-combat">
                 <div class="initiative-block block border-block">
@@ -386,130 +397,133 @@
                 </div>
             </div>
             <div class="action-flex">
-                <div class="subsection-actions subsection">
-                    <section class="actions block border-block">
-                        <table>
-                            <tr>
-                                <th>Attack</th>
-                                <th>Range</th>
-                                <th>Hit/DC</th>
-                                <th>Damage</th>
-                                <th>Notes</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="attack-name">Dagger</div>
-                                    <div class="attack-type">Melee Weapon</div>
-                                </td>
-                                <td>
-                                    <span class="normal-range">20</span>
-                                    <span class="disadvantage-range">(60)</span>
-                                </td>
-                                <td class="boxed-item">+6</td>
-                                <td class="boxed-item">1d4+3</td>
-                                <td><span class="attack-notes">Simple, Finesse, Light, Thrown, Nick, Range
-                                        (20/60)</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="attack-name">Dagger</div>
-                                    <div class="attack-type">Melee Weapon</div>
-                                </td>
-                                <td>
-                                    <span class="normal-range">20</span>
-                                    <span class="disadvantage-range">(60)</span>
-                                </td>
-                                <td class="boxed-item">+6</td>
-                                <td class="boxed-item">1d4+3</td>
-                                <td><span class="attack-notes">Simple, Finesse, Light, Thrown, Nick, Range
-                                        (20/60)</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="attack-name">Longbow</div>
-                                    <div class="attack-type">Ranged Weapon</div>
-                                </td>
-                                <td>
-                                    <span class="normal-range">150</span>
-                                    <span class="disadvantage-range">(600)</span>
-                                </td>
-                                <td class="boxed-item">+8</td>
-                                <td class="boxed-item">1d8+3</td>
-                                <td><span class="attack-notes">Martial, Ammunition, Heavy, Range, Two-Handed, Slow,
-                                        Range
-                                        (150/600), Ensnaring Strike: 1d6 piercing damage</span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="attack-name">Sun Blade</div>
-                                    <div class="attack-type">Melee Weapon</div>
-                                </td>
-                                <td>
-                                    <span class="normal-range">5</span>
-                                    <span class="disadvantage-range">ft. Reach</span>
-                                </td>
-                                <td class="boxed-item">+8</td>
-                                <td class="boxed-item">1d8+5</td>
-                                <td><span class="attack-notes">+1d8 radiant damage, Martial, Versatile, Sap,
-                                        Finesse</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="attack-name">Fire Bolt</div>
-                                    <div class="attack-type">Legacy - Cantrip - Wizard</div>
-                                </td>
-                                <td>
-                                    <span class="normal-range">120</span>
-                                    <span class="disadvantage-range">ft.</span>
-                                </td>
-                                <td class="boxed-item">+4</td>
-                                <td class="boxed-item">2d10</td>
-                                <td><span class="attack-notes">V/S</span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="attack-name">Scorching Ray</div>
-                                    <div class="attack-type">Legacy - 2nd Level - Circlet of Blasting</div>
-                                </td>
-                                <td>
-                                    <span class="normal-range">120</span>
-                                    <span class="disadvantage-range">ft.</span>
-                                </td>
-                                <td class="boxed-item">+6</td>
-                                <td class="boxed-item">2d6</td>
-                                <td><span class="attack-notes">1 Charge, V/S</span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="attack-name">Unarmed Strike</div>
-                                    <div class="attack-type">Melee Attack</div>
-                                </td>
-                                <td>
-                                    <span class="normal-range">5</span>
-                                    <span class="disadvantage-range">ft. Reach</span>
-                                </td>
-                                <td class="boxed-item">+3</td>
-                                <td class="boxed-item">1</td>
-                                <td><span class="attack-notes"></span></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="attack-name">Healing Hands</div>
-                                    <div class="attack-type"></div>
-                                </td>
-                                <td>
-                                    <span class="normal-range">Touch</span>
-                                    <span class="disadvantage-range"></span>
-                                </td>
-                                <td class="boxed-item">--</td>
-                                <td class="boxed-item">3d4</td>
-                                <td><span class="attack-notes">1/LR</span></td>
-                            </tr>
-                        </table>
-                    </section>
+                <button class="collapsible">Actions</button>
+                <div class="content">
+                    <div class="subsection-actions subsection">
+                        <section class="actions block border-block">
+                            <table>
+                                <tr>
+                                    <th>Attack</th>
+                                    <th>Range</th>
+                                    <th>Hit/DC</th>
+                                    <th>Damage</th>
+                                    <th>Notes</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="attack-name">Dagger</div>
+                                        <div class="attack-type">Melee Weapon</div>
+                                    </td>
+                                    <td>
+                                        <span class="normal-range">20</span>
+                                        <span class="disadvantage-range">(60)</span>
+                                    </td>
+                                    <td class="boxed-item">+6</td>
+                                    <td class="boxed-item">1d4+3</td>
+                                    <td><span class="attack-notes">Simple, Finesse, Light, Thrown, Nick, Range
+                                            (20/60)</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="attack-name">Dagger</div>
+                                        <div class="attack-type">Melee Weapon</div>
+                                    </td>
+                                    <td>
+                                        <span class="normal-range">20</span>
+                                        <span class="disadvantage-range">(60)</span>
+                                    </td>
+                                    <td class="boxed-item">+6</td>
+                                    <td class="boxed-item">1d4+3</td>
+                                    <td><span class="attack-notes">Simple, Finesse, Light, Thrown, Nick, Range
+                                            (20/60)</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="attack-name">Longbow</div>
+                                        <div class="attack-type">Ranged Weapon</div>
+                                    </td>
+                                    <td>
+                                        <span class="normal-range">150</span>
+                                        <span class="disadvantage-range">(600)</span>
+                                    </td>
+                                    <td class="boxed-item">+8</td>
+                                    <td class="boxed-item">1d8+3</td>
+                                    <td><span class="attack-notes">Martial, Ammunition, Heavy, Range, Two-Handed, Slow,
+                                            Range
+                                            (150/600), Ensnaring Strike: 1d6 piercing damage</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="attack-name">Sun Blade</div>
+                                        <div class="attack-type">Melee Weapon</div>
+                                    </td>
+                                    <td>
+                                        <span class="normal-range">5</span>
+                                        <span class="disadvantage-range">ft. Reach</span>
+                                    </td>
+                                    <td class="boxed-item">+8</td>
+                                    <td class="boxed-item">1d8+5</td>
+                                    <td><span class="attack-notes">+1d8 radiant damage, Martial, Versatile, Sap,
+                                            Finesse</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="attack-name">Fire Bolt</div>
+                                        <div class="attack-type">Legacy - Cantrip - Wizard</div>
+                                    </td>
+                                    <td>
+                                        <span class="normal-range">120</span>
+                                        <span class="disadvantage-range">ft.</span>
+                                    </td>
+                                    <td class="boxed-item">+4</td>
+                                    <td class="boxed-item">2d10</td>
+                                    <td><span class="attack-notes">V/S</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="attack-name">Scorching Ray</div>
+                                        <div class="attack-type">Legacy - 2nd Level - Circlet of Blasting</div>
+                                    </td>
+                                    <td>
+                                        <span class="normal-range">120</span>
+                                        <span class="disadvantage-range">ft.</span>
+                                    </td>
+                                    <td class="boxed-item">+6</td>
+                                    <td class="boxed-item">2d6</td>
+                                    <td><span class="attack-notes">1 Charge, V/S</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="attack-name">Unarmed Strike</div>
+                                        <div class="attack-type">Melee Attack</div>
+                                    </td>
+                                    <td>
+                                        <span class="normal-range">5</span>
+                                        <span class="disadvantage-range">ft. Reach</span>
+                                    </td>
+                                    <td class="boxed-item">+3</td>
+                                    <td class="boxed-item">1</td>
+                                    <td><span class="attack-notes"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="attack-name">Healing Hands</div>
+                                        <div class="attack-type"></div>
+                                    </td>
+                                    <td>
+                                        <span class="normal-range">Touch</span>
+                                        <span class="disadvantage-range"></span>
+                                    </td>
+                                    <td class="boxed-item">--</td>
+                                    <td class="boxed-item">3d4</td>
+                                    <td><span class="attack-notes">1/LR</span></td>
+                                </tr>
+                            </table>
+                        </section>
+                    </div>
                 </div>
             </div>
         </div>
@@ -517,3 +531,5 @@
 </body>
 
 </html>
+
+<script src='index.js'></script>

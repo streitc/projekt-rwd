@@ -101,7 +101,6 @@ th {
         color: white;
         font-weight: bold;
         float: right;
-        /* margin-left: 5px; */
     }
 
     .active:after {
@@ -109,10 +108,8 @@ th {
     }
 
     .content {
-        /* padding: 0 18px; */
         display: none;
         overflow: hidden;
-        /* background-color: #f1f1f1; */
     }
 
     .base-info {
@@ -224,9 +221,6 @@ th {
     }
 
     .health-info {
-        /* visibility: collapse;
-        width: 0;
-        height: 0; */
         display: none;
     }
 
@@ -247,9 +241,6 @@ th {
     }
 
     .subsection-combat {
-        /* visibility: hidden;
-        width: 0px;
-        height: 0px; */
         display: none;
     }
 
@@ -294,15 +285,10 @@ th {
     }
 
     .health-info {
-        /* visibility: collapse;
-        width: 0; */
         display: none;
     }
 
     .subsection-combat {
-        /* visibility: hidden;
-        width: 0px;
-        height: 0px; */
         display: none;
     }
 
@@ -411,9 +397,7 @@ th {
     }
 
     .health {
-        visibility: hidden;
-        width: 0;
-        height: 0;
+        display: none;
     }
 
     .subsection-flex {

@@ -7,9 +7,14 @@
     <title>Khaani Amakiir's Character Sheet</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
+    <header>
+        <div class="header" include="header/header.html"></div>
+    </header>
+    <div class="navigation" include="navigation/navigation.html"></div>
     <div class="char-top">
         <div class="icon"><img src="header/1581111423-62805453.jpeg" class="char-icon"></div>
         <div class="char-info">
@@ -26,6 +31,14 @@
                     <span class="max-hp hp">49</span>
                 </div>
             </div>
+            <div class="health-phone">
+                <div class="health-label">HP</div>
+                <div class="health-points">
+                    <span class="current-hp hp"><input class="hp-input" value="49"></span>
+                    <span class="spacer-hp hp">/</span>
+                    <span class="max-hp hp">49</span>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -33,7 +46,9 @@
         <div class="health-info block">
             <div class="inspiration-block-flex">
                 <div class="inspiration-block border-block">
-                    <input class="inspiration-check" type="checkbox">
+                    <div class="insp-icon">
+                        <i class="material-icons" style="font-size: 40px;">wb_sunny</i>
+                    </div>
                     <span>Inspiration</span>
                 </div>
             </div>
@@ -145,38 +160,50 @@
                     <section class="saving-throws block border-block">
                         <div class="save-block-flex">
                             <div class="str save-block">
-                                <div class="str-prof save-prof">o</div>
+                                <div class="str-prof save-prof tooltip"><i class="material-icons"
+                                        style="font-size: xx-small;">lens</i><span
+                                        class="tooltiptext">Proficiency</span></div>
                                 <div class="str-save-txt save-txt">STR</div>
                                 <div class="str-save-mod save-mod">+3</div>
                             </div>
                             <div class="dex save-block">
-                                <div class="dex-prof save-prof">o</div>
+                                <div class="dex-prof save-prof tooltip"><i class="material-icons"
+                                        style="font-size: xx-small;" title="Proficiency">lens</i><span
+                                        class="tooltiptext">Proficiency</span></div>
                                 <div class="dex-save-txt save-txt">DEX</div>
                                 <div class="dex-save-mod save-mod">+6</div>
                             </div>
                             <div class="con save-block">
-                                <div class="con-prof save-prof"></div>
+                                <div class="con-prof save-prof tooltip"><i class="material-icons"
+                                        style="font-size: x-small; color: rgba(128, 128, 128, 0.699);">blur_on</i><span
+                                        class="tooltiptext">Not Proficient</span></div>
                                 <div class="con-save-txt save-txt">CON</div>
                                 <div class="con-save-mod save-mod">+1</div>
                             </div>
                             <div class="int save-block">
-                                <div class="int-prof save-prof"></div>
+                                <div class="int-prof save-prof tooltip"><i class="material-icons"
+                                        style="font-size: x-small; color: rgba(128, 128, 128, 0.699);">blur_on</i><span
+                                        class="tooltiptext">Not Proficient</span></div>
                                 <div class="int-save-txt save-txt">INT</div>
                                 <div class="int-save-mod save-mod">+1</div>
                             </div>
                             <div class="wis save-block">
-                                <div class="wis-prof save-prof"></div>
+                                <div class="wis-prof save-prof tooltip"><i class="material-icons"
+                                        style="font-size: x-small; color: rgba(128, 128, 128, 0.699);">blur_on</i><span
+                                        class="tooltiptext">Not Proficient</span></div>
                                 <div class="wis-save-txt save-txt">WIS</div>
                                 <div class="wis-save-mod save-mod">+3</div>
                             </div>
                             <div class="cha save-block">
-                                <div class="cha-prof save-prof"></div>
+                                <div class="cha-prof save-prof tooltip"><i class="material-icons"
+                                        style="font-size: x-small; color: rgba(128, 128, 128, 0.699);">blur_on</i><span
+                                        class="tooltiptext">Not Proficient</span></div>
                                 <div class="cha-save-txt save-txt">CHA</div>
                                 <div class="cha-save-mod save-mod">+0</div>
                             </div>
                         </div>
                         <div class="saving-throw-footer footer">
-                            <div class="footer-label">Saving Throws</div>
+                            <div class="footer-label"><br>Saving Throws</div>
                         </div>
                     </section>
                 </div>
@@ -199,13 +226,13 @@
                             <div class="passive-insight-txt senses-txt">Passive Insight</div>
                         </div>
                         <div class="senses-footer footer">
-                            <div class="footer-label">Senses</div>
+                            <div class="footer-label"><br>Senses</div>
                         </div>
                     </section>
                 </div>
             </div>
 
-            <button class="collapsible">Proficiencies</button>
+            <button class="collapsible">Proficiencies & Training</button>
             <div class="content">
                 <div class="subsection-proficiencies subsection">
                     <section class="proficiencies-training block border-block">
@@ -220,7 +247,9 @@
                             <div>
                                 <h4>Weapons</h4>
                             </div>
-                            <div class="training-text">Martial Weapons, Simple Weapons</div>
+                            <div class="training-text">Martial Weapons, Simple Weapons, Club, Dagger, Dart, Javelin,
+                                Longbow, Longsword, Mace, Quarterstaff, Scimitar, Shortbow, Shortsword, Sickle, Sling,
+                                Spear</div>
                             <hr>
                         </div>
                         <div>
@@ -237,7 +266,8 @@
                             <div class="training-text">Celestial, Common, Elvish</div>
                         </div>
                         <div class="proficiencies-footer footer">
-                            <div class="footer-label">Proficiencies & Training</div>
+
+                            <div class="footer-label"><br>Proficiencies & Training</div>
                         </div>
                     </section>
                 </div>
@@ -250,128 +280,158 @@
                 <section class="skills block border-block">
                     <table>
                         <tr>
-                            <th>Prof</th>
+                            <th class="skill-proficiency">Prof</th>
                             <th>Mod</th>
                             <th>Skill</th>
-                            <th>Bonus</th>
+                            <th class="align-right">Bonus</th>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td class="skill-proficiency tooltip"><i class="material-icons"
+                                    style="font-size: x-small; color: rgba(128, 128, 128, 0.699);">blur_on</i><span
+                                    class="tooltiptext">Not Proficient</span></td>
                             <td class="skill-mod">DEX</td>
-                            <td>Acrobatics</td>
-                            <td class="boxed-item">+3</td>
+                            <td class="skill-txt underlined-item">Acrobatics</td>
+                            <td class="underlined-item align-right"><span class="skill-bonus boxed-item">+3</span></td>
                         </tr>
                         <tr>
-                            <td>o</td>
+                            <td class="skill-proficiency tooltip"><i class="material-icons"
+                                    style="font-size: xx-small;">lens</i><span class="tooltiptext">Proficiency</span>
+                            </td>
                             <td class="skill-mod">WIS</td>
-                            <td>Animal Handling</td>
-                            <td class="boxed-item">+6</td>
+                            <td class="skill-txt underlined-item">Animal Handling</td>
+                            <td class="underlined-item align-right"><span class="skill-bonus boxed-item">+6</span></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td class="skill-proficiency tooltip"><i class="material-icons"
+                                    style="font-size: x-small; color: rgba(128, 128, 128, 0.699);">blur_on</i><span
+                                    class="tooltiptext">Not Proficient</span></td>
                             <td class="skill-mod">INT</td>
-                            <td>Arcana</td>
-                            <td class="boxed-item">+1</td>
+                            <td class="skill-txt underlined-item">Arcana</td>
+                            <td class="underlined-item align-right"><span class="skill-bonus boxed-item">+1</span></td>
                         </tr>
                         <tr>
-                            <td>o</td>
+                            <td class="skill-proficiency tooltip"><i class="material-icons"
+                                    style="font-size: xx-small;">lens</i><span class="tooltiptext">Proficiency</span>
+                            </td>
                             <td class="skill-mod">STR</td>
-                            <td>Athletics</td>
-                            <td class="boxed-item">+3</td>
+                            <td class="skill-txt underlined-item">Athletics</td>
+                            <td class="underlined-item align-right"><span class="skill-bonus boxed-item">+3</span></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td class="skill-proficiency tooltip"><i class="material-icons"
+                                    style="font-size: x-small; color: rgba(128, 128, 128, 0.699);">blur_on</i><span
+                                    class="tooltiptext">Not Proficient</span></td>
                             <td class="skill-mod">CHA</td>
-                            <td>Deception</td>
-                            <td class="boxed-item">+0</td>
+                            <td class="skill-txt underlined-item">Deception</td>
+                            <td class="underlined-item align-right"><span class="skill-bonus boxed-item">+0</span></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td class="skill-proficiency tooltip"><i class="material-icons"
+                                    style="font-size: x-small; color: rgba(128, 128, 128, 0.699);">blur_on</i><span
+                                    class="tooltiptext">Not Proficient</span></td>
                             <td class="skill-mod">INT</td>
-                            <td>History</td>
-                            <td class="boxed-item">+1</td>
+                            <td class="skill-txt underlined-item">History</td>
+                            <td class="underlined-item align-right"><span class="skill-bonus boxed-item">+1</span></td>
                         </tr>
                         <tr>
-                            <td>o</td>
+                            <td class="skill-proficiency tooltip"><i class="material-icons"
+                                    style="font-size: xx-small;">lens</i><span class="tooltiptext">Proficiency</span>
+                            </td>
                             <td class="skill-mod">WIS</td>
-                            <td>Insight</td>
-                            <td class="boxed-item">+6</td>
+                            <td class="skill-txt underlined-item">Insight</td>
+                            <td class="underlined-item align-right"><span class="skill-bonus boxed-item">+6</span></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td class="skill-proficiency tooltip"><i class="material-icons"
+                                    style="font-size: x-small; color: rgba(128, 128, 128, 0.699);">blur_on</i><span
+                                    class="tooltiptext">Not Proficient</span></td>
                             <td class="skill-mod">CHA</td>
-                            <td>Intimidation</td>
-                            <td class="boxed-item">+0</td>
+                            <td class="skill-txt underlined-item">Intimidation</td>
+                            <td class="underlined-item align-right"><span class="skill-bonus boxed-item">+0</span></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td class="skill-proficiency tooltip"><i class="material-icons"
+                                    style="font-size: x-small; color: rgba(128, 128, 128, 0.699);">blur_on</i><span
+                                    class="tooltiptext">Not Proficient</span></td>
                             <td class="skill-mod">INT</td>
-                            <td>Investigation</td>
-                            <td class="boxed-item">+1</td>
+                            <td class="skill-txt underlined-item">Investigation</td>
+                            <td class="underlined-item align-right"><span class="skill-bonus boxed-item">+1</span></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td class="skill-proficiency tooltip"><i class="material-icons"
+                                    style="font-size: x-small; color: rgba(128, 128, 128, 0.699);">blur_on</i><span
+                                    class="tooltiptext">Not Proficient</span></td>
                             <td class="skill-mod">WIS</td>
-                            <td>Medicine</td>
-                            <td class="boxed-item">+3</td>
+                            <td class="skill-txt underlined-item">Medicine</td>
+                            <td class="underlined-item align-right"><span class="skill-bonus boxed-item">+3</span></td>
                         </tr>
                         <tr>
-                            <td>o</td>
+                            <td class="skill-proficiency tooltip"><i class="material-icons"
+                                    style="font-size: xx-small;">lens</i><span class="tooltiptext">Proficiency</span>
+                            </td>
                             <td class="skill-mod">INT</td>
-                            <td>Nature</td>
-                            <td class="boxed-item">+4</td>
+                            <td class="skill-txt underlined-item">Nature</td>
+                            <td class="underlined-item align-right"><span class="skill-bonus boxed-item">+4</span></td>
                         </tr>
                         <tr>
-                            <td>o</td>
+                            <td class="skill-proficiency tooltip"><i class="material-icons"
+                                    style="font-size: xx-small;">lens</i><span class="tooltiptext">Proficiency</span>
+                            </td>
                             <td class="skill-mod">WIS</td>
-                            <td>Perception</td>
-                            <td class="boxed-item">+6</td>
+                            <td class="skill-txt underlined-item">Perception</td>
+                            <td class="underlined-item align-right"><span class="skill-bonus boxed-item">+6</span></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td class="skill-proficiency tooltip"><i class="material-icons"
+                                    style="font-size: x-small; color: rgba(128, 128, 128, 0.699);">blur_on</i><span
+                                    class="tooltiptext">Not Proficient</span></td>
                             <td class="skill-mod">CHA</td>
-                            <td>Performance</td>
-                            <td class="boxed-item">+0</td>
+                            <td class="skill-txt underlined-item">Performance</td>
+                            <td class="underlined-item align-right"><span class="skill-bonus boxed-item">+0</span></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td class="skill-proficiency tooltip"><i class="material-icons"
+                                    style="font-size: x-small; color: rgba(128, 128, 128, 0.699);">blur_on</i><span
+                                    class="tooltiptext">Not Proficient</span></td>
                             <td class="skill-mod">CHA</td>
-                            <td>Persuasion</td>
-                            <td class="boxed-item">+0</td>
+                            <td class="skill-txt underlined-item">Persuasion</td>
+                            <td class="underlined-item align-right"><span class="skill-bonus boxed-item">+0</span></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td class="skill-proficiency tooltip"><i class="material-icons"
+                                    style="font-size: x-small; color: rgba(128, 128, 128, 0.699);">blur_on</i><span
+                                    class="tooltiptext">Not Proficient</span></td>
                             <td class="skill-mod">INT</td>
-                            <td>Religion</td>
-                            <td class="boxed-item">+1</td>
+                            <td class="skill-txt underlined-item">Religion</td>
+                            <td class="underlined-item align-right"><span class="skill-bonus boxed-item">+1</span></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td class="skill-proficiency tooltip"><i class="material-icons"
+                                    style="font-size: x-small; color: rgba(128, 128, 128, 0.699);">blur_on</i><span
+                                    class="tooltiptext">Not Proficient</span></td>
                             <td class="skill-mod">DEX</td>
-                            <td>Sleight of Hand</td>
-                            <td class="boxed-item">+3</td>
+                            <td class="skill-txt underlined-item">Sleight of Hand</td>
+                            <td class="underlined-item align-right"><span class="skill-bonus boxed-item">+3</span></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td class="skill-proficiency tooltip"><i class="material-icons"
+                                    style="font-size: x-small; color: rgba(128, 128, 128, 0.699);">blur_on</i><span
+                                    class="tooltiptext">Not Proficient</span></td>
                             <td class="skill-mod">DEX</td>
-                            <td>Stealth</td>
-                            <td class="boxed-item">+3</td>
+                            <td class="skill-txt underlined-item">Stealth</td>
+                            <td class="underlined-item align-right"><span class="skill-bonus boxed-item">+3</span></td>
                         </tr>
                         <tr>
-                            <td>x</td>
+                            <td class="skill-proficiency tooltip"><i class="material-icons"
+                                    style="font-size: medium;">radio_button_checked</i><span
+                                    class="tooltiptext">Expertise</span></td>
                             <td class="skill-mod">WIS</td>
-                            <td>Survival</td>
-                            <td class="boxed-item">+9</td>
+                            <td class="skill-txt underlined-item">Survival</td>
+                            <td class="underlined-item align-right"><span class="skill-bonus boxed-item">+9</span></td>
                         </tr>
                     </table>
-                    <br>
-                    <div>
-                        <h4>Legend</h4>
-                        <div>o - Proficiency</div>
-                        <div>x - Expertise</div>
-                    </div>
                     <div class="skills-footer footer">
-                        <div class="footer-label">Skills</div>
+                        <div class="footer-label"><br>Skills</div>
                     </div>
                 </section>
             </div>
@@ -413,7 +473,7 @@
                 <div class="content">
                     <div class="subsection-actions subsection">
                         <section class="actions block border-block">
-                            <table>
+                            <table class="attack-table">
                                 <tr>
                                     <th class="th-attack">Attack</th>
                                     <th class="th-attack">Range</th>
@@ -430,7 +490,7 @@
                                         <span class="normal-range">20</span>
                                         <span class="disadvantage-range">(60)</span>
                                     </td>
-                                    <td class="boxed-item">+6</td>
+                                    <td class="boxed-item hitdc">+6</td>
                                     <td class="boxed-item">1d4+3</td>
                                     <td><span class="attack-notes">Simple, Finesse, Light, Thrown, Nick, Range
                                             (20/60)</span>
@@ -445,7 +505,7 @@
                                         <span class="normal-range">20</span>
                                         <span class="disadvantage-range">(60)</span>
                                     </td>
-                                    <td class="boxed-item">+6</td>
+                                    <td class="boxed-item hitdc">+6</td>
                                     <td class="boxed-item">1d4+3</td>
                                     <td><span class="attack-notes">Simple, Finesse, Light, Thrown, Nick, Range
                                             (20/60)</span>
@@ -460,7 +520,7 @@
                                         <span class="normal-range">150</span>
                                         <span class="disadvantage-range">(600)</span>
                                     </td>
-                                    <td class="boxed-item">+8</td>
+                                    <td class="boxed-item hitdc">+8</td>
                                     <td class="boxed-item">1d8+3</td>
                                     <td><span class="attack-notes">Martial, Ammunition, Heavy, Range, Two-Handed, Slow,
                                             Range
@@ -475,7 +535,7 @@
                                         <span class="normal-range">5</span>
                                         <span class="disadvantage-range">ft. Reach</span>
                                     </td>
-                                    <td class="boxed-item">+8</td>
+                                    <td class="boxed-item hitdc">+8</td>
                                     <td class="boxed-item">1d8+5</td>
                                     <td><span class="attack-notes">+1d8 radiant damage, Martial, Versatile, Sap,
                                             Finesse</span>
@@ -490,7 +550,7 @@
                                         <span class="normal-range">120</span>
                                         <span class="disadvantage-range">ft.</span>
                                     </td>
-                                    <td class="boxed-item">+4</td>
+                                    <td class="boxed-item hitdc">+4</td>
                                     <td class="boxed-item">2d10</td>
                                     <td><span class="attack-notes">V/S</span></td>
                                 </tr>
@@ -503,7 +563,7 @@
                                         <span class="normal-range">120</span>
                                         <span class="disadvantage-range">ft.</span>
                                     </td>
-                                    <td class="boxed-item">+6</td>
+                                    <td class="boxed-item hitdc">+6</td>
                                     <td class="boxed-item">2d6</td>
                                     <td><span class="attack-notes">1 Charge, V/S</span></td>
                                 </tr>
@@ -516,7 +576,7 @@
                                         <span class="normal-range">5</span>
                                         <span class="disadvantage-range">ft. Reach</span>
                                     </td>
-                                    <td class="boxed-item">+3</td>
+                                    <td class="boxed-item hitdc">+3</td>
                                     <td class="boxed-item">1</td>
                                     <td><span class="attack-notes"></span></td>
                                 </tr>
@@ -529,7 +589,7 @@
                                         <span class="normal-range">Touch</span>
                                         <span class="disadvantage-range"></span>
                                     </td>
-                                    <td class="boxed-item">--</td>
+                                    <td class="boxed-item hitdc">--</td>
                                     <td class="boxed-item">3d4</td>
                                     <td><span class="attack-notes">1/LR</span></td>
                                 </tr>

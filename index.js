@@ -1,21 +1,3 @@
-
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
-        } else {
-            content.style.display = "block";
-        }
-    });
-}
-
-
-
 /**
  * Function injects specified HTML file to specified HTML 
  * node of the current file
@@ -70,3 +52,34 @@ function injectAll() {
 }
 
 injectAll();
+
+
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+
+var inspiration = document.getElementsByClassName("insp-icon");
+var i;
+
+for (i = 0; i < inspiration.length; i++) {
+    inspiration[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        if (this.style.color === "white" || this.style.color === "") {
+            this.style.color = "black";
+        } else {
+            this.style.color = "white";
+        }
+    });
+}

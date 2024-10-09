@@ -59,21 +59,33 @@ body {
     width: 75%;
 }
 
-.health {
+.health,
+.health-phone {
     border: 1px solid darkred;
     border-radius: 4px;
     padding: 5px;
 }
 
+.insp-icon {
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.insp-icon:hover {
+    color: rgba(128, 128, 128, 0.699) !important;
+}
+
 table {
     width: 100%;
-    border-spacing: 7px;
 }
 
 th {
     text-align: left;
     text-transform: uppercase;
     color: rgb(88, 87, 87);
+    font-size: x-small;
 }
 
 .th-attack {
@@ -82,6 +94,13 @@ th {
 }
 
 @media only screen and (max-width: 615px) {
+    .health {
+        display: none;
+    }
+
+    .hp-input {
+        width: 20px;
+    }
 
     .collapsible {
         background-color: rgb(26, 41, 41);
@@ -166,9 +185,32 @@ th {
     .subsection-combat {
         display: none;
     }
+
+    .passives {
+        margin: 5px;
+    }
+
+    .skill-mod {
+        font-size: 0.9rem;
+    }
+    
+    .skill-txt {
+        font-size: 1rem;
+    }
+
+    .skill-bonus {
+        font-size: x-large;
+    }
 }
 
 @media only screen and (min-width: 615px) {
+    .health-phone {
+        display: none;
+    }
+
+    .hp-input {
+        width: 30px;
+    }
 
     .collapsible {
         display: none;
@@ -244,6 +286,18 @@ th {
     .skills {
         width: 280px;
         height: 710px;
+    }
+
+    .skill-mod {
+        font-size: 0.7rem;
+    }
+    
+    .skill-txt {
+        font-size: 0.9rem;
+    }
+
+    .skill-bonus {
+        font-size: larger;
     }
 
     .subsection-combat {
@@ -381,7 +435,12 @@ th {
     .health-line {
         width: 100%;
         text-align: end;
-        font-size: x-large;
+        font-size: 30px;
+        margin: auto;
+    }
+
+    .hp-input {
+        width: 50px;
     }
 
     .proficiency-block-flex {
@@ -402,7 +461,8 @@ th {
         margin: 0;
     }
 
-    .health {
+    .health,
+    .health-phone {
         display: none;
     }
 
@@ -452,6 +512,10 @@ th {
         width: 50%;
     }
 
+    .conditions {
+        padding-left: 5px;
+    }
+
     .action-flex {
         display: flex;
     }
@@ -475,7 +539,6 @@ th {
     color: unset;
     border-style: unset;
     font: unset;
-    width: 30px;
     text-align: end;
 }
 
@@ -534,6 +597,7 @@ th {
 
 .health-block {
     width: 220px;
+    display: flex;
 }
 
 .subsections {
@@ -560,27 +624,80 @@ th {
     align-items: center;
     text-align: center;
     flex-grow: 1;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.save-prof {
+    border: 2px solid rgba(139, 0, 0, 0.479);
+    height: 2.2rem;
+    width: 30px;
+    padding: 5px;
+    border-top-left-radius: 15px;
+}
+
+.save-txt {
+    border: 2px solid rgba(139, 0, 0, 0.479);
+    padding: 5px;
+    border-left: none;
+    font-family: 'Roboto Mono';
+    font-size: 0.9rem;
+    height: 2.2rem;
+}
+
+.save-mod {
+    border: 2px solid rgba(139, 0, 0, 0.479);
+    padding: 5px;
+    border-left: none;
+    height: 2.2rem;
+    border-bottom-right-radius: 15px;
+    font-size: large;
 }
 
 .passives {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 4px;
+    height: 2rem;
 }
 
-.save-prof,
-.save-txt,
-.save-mod {
-    margin: 2px;
+.senses-mod {
+    border: 2px solid rgba(139, 0, 0, 0.479);
+    padding: 5px;
+    border-top-left-radius: 15px;
+    font-weight: bold;
 }
 
-.subsection-actions {
-    overflow-x: auto;
+.senses-txt {
+    border: 2px solid rgba(139, 0, 0, 0.479);
+    padding: 5px;
+    border-left: none;
+    border-bottom-right-radius: 15px;
+}
+
+.subsection-skills td {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.subsection-skills table {
+    border-spacing: 0px;
+    width: 98%;
 }
 
 .skill-mod {
     font-family: 'Roboto Mono';
+    /* font-size: 0.7rem; */
+    font-weight: bold;
+    color: rgb(88, 87, 87);
+}
+
+/* .skill-txt {
+    font-size: 0.9rem;
+} */
+
+.subsection-actions {
+    overflow-x: auto;
 }
 
 .actions {
@@ -588,8 +705,8 @@ th {
     margin-right: 0px;
 }
 
-td {
-    height: 1rem;
+.attack-table {
+    border-spacing: 6px;
 }
 
 .attack-type {
@@ -607,10 +724,23 @@ td {
     width: 33%;
 }
 
+.underlined-item {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.699);
+}
+
 .boxed-item {
     border: 1px solid gray;
     border-radius: 4px;
     text-align: center;
+}
+
+.skill-bonus {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.hitdc {
+    font-size: larger;
 }
 
 h1,
@@ -620,8 +750,8 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.3em;
 }
 
 .training-text {
@@ -643,6 +773,51 @@ h6 {
 
 .footer-label {
     align-self: flex-end;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.skill-proficiency {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
 }
 
 /*  ==================================================================

@@ -5,36 +5,10 @@
             date: 15.08.2024
     ================================================================== */
 
-/* roboto-condensed-regular - latin */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Roboto Condensed';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/roboto-condensed-v27-latin-regular.woff2') format('woff2'),
-        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        url('../fonts/roboto-condensed-v27-latin-regular.ttf') format('truetype');
-    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
-
-/* roboto-mono-regular - latin */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Roboto Mono';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/roboto-mono-v23-latin-regular.woff2') format('woff2'),
-        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-        url('../fonts/roboto-mono-v23-latin-regular.ttf') format('truetype');
-    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
-
 body {
     background-color: rgb(185, 192, 191);
     font-family: 'Roboto Condensed';
-    background-image: url('../img/backroundblogwinter11\ 1.0\ \(2017_10_13\ 17_49_02\ UTC\).PNG');
+    background-image: url('../assets/img/background/backroundblogwinter11\ 1.0\ \(2017_10_13\ 17_49_02\ UTC\).PNG');
     background-size: cover;
 }
 

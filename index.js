@@ -44,16 +44,44 @@ async function injectHTML(filePath, elem) {
  * This function injects a content of <filename> to
  * each div with the "include" attribute
  */
-function injectAll() {
-    document.querySelectorAll("div[include]")
-        .forEach((elem) => {
-            injectHTML(elem.getAttribute("include"), elem);
-        })
+async function injectAll() {
+    let elems = document.querySelectorAll("[include]");
+    while (elems.length > 0) {
+        for (let elem of elems) {
+            await injectHTML(elem.getAttribute("include"), elem);
+            elem.removeAttribute("include");
+        }
+        elems = document.querySelectorAll("[include]");
+    }
 }
 
-injectAll();
+function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
 
+function setActiveNav() {
+    var path = this.location.pathname;
+    var nav = document.getElementsByClassName("navigation");
+    var i;
 
+    for (i = 0; i < nav.length; i++) {
+        if (path === "/index.html" && nav[i].id === "home") {
+            nav[i].className += " active";
+        } else if (path === "/body/copyright.html" && nav[i].id === "copyright") {
+            nav[i].className += " active";
+        } else if (path === "/body/about.html" && nav[i].id === "about") {
+            nav[i].className += " active";
+        }
+        else {
+            nav[i].className = "navigation";
+        }
+    }
+}
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -83,3 +111,8 @@ for (i = 0; i < inspiration.length; i++) {
         }
     });
 }
+
+document.addEventListener("DOMContentLoaded", async () => {
+    await injectAll()
+    setActiveNav();
+})

@@ -14,6 +14,21 @@ body {
     margin-bottom: 55px;
 }
 
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.full-screen-block {
+    min-height: 272px;
+    border: 2px solid darkred;
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+    max-width: 1200px;
+}
+
 .border-block {
     border: 2px solid darkred;
     padding: 5px;
@@ -51,6 +66,10 @@ body {
 
 .insp-icon:hover {
     color: rgba(128, 128, 128, 0.699) !important;
+}
+
+p {
+    margin-left: 5px;
 }
 
 table {
@@ -848,6 +867,13 @@ h6 {
 
 .align-right {
     text-align: right;
+}
+
+.about-img {    
+    margin-right: 10px;
+    width: 100px;
+    height: 258px;
+    float: left;
 }
 
 /*  ==================================================================

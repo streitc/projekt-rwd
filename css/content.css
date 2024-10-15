@@ -17,6 +17,7 @@ body {
 .main {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .full-screen-block {

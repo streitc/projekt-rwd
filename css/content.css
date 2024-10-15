@@ -5,6 +5,13 @@
             date: 15.08.2024
     ================================================================== */
 
+:root {
+    --dark-accents: 26 41 41;
+    --lighter-accents: 43 63 63;
+    --light-accents: 78 121 121;
+    --border-colour: 139 0 0;
+}
+
 body {
     background-color: rgb(185, 192, 191);
     font-family: 'Roboto Condensed';
@@ -23,19 +30,19 @@ body {
 
 .full-screen-block {
     min-height: 265px;
-    border: 2px solid darkred;
+    border: 2px solid rgb(var(--border-colour));
     padding: 10px 10px 0px 10px;
     margin-bottom: 5px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 1);
     max-width: 1200px;
 }
 
 .border-block {
-    border: 2px solid darkred;
+    border: 2px solid rgb(var(--border-colour));
     padding: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .small-block {
@@ -53,7 +60,7 @@ body {
 
 .health,
 .health-phone {
-    border: 1px solid darkred;
+    border: 1px solid rgb(var(--border-colour));
     border-radius: 4px;
     padding: 5px;
 }
@@ -97,7 +104,7 @@ th {
 .navbar {
     left: 0px;
     overflow: hidden;
-    background-color: rgba(26, 41, 41, 0.9);
+    background-color: rgb(var(--dark-accents) / 0.9);
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -119,7 +126,7 @@ th {
 }
 
 .navbar .active {
-    background-color: rgb(78, 121, 121);
+    background-color: rgb(var(--light-accents));
     color: white;
 }
 
@@ -158,7 +165,7 @@ th {
     }
 
     .collapsible {
-        background-color: rgb(26, 41, 41);
+        background-color: rgb(var(--dark-accents));
         color: white;
         cursor: pointer;
         padding: 18px;
@@ -173,7 +180,7 @@ th {
 
     .collapsible.active,
     .collapsible:hover {
-        background-color: rgb(43, 63, 63);
+        background-color: rgb(var(--lighter-accents));
     }
 
     .collapsible:after {
@@ -196,7 +203,7 @@ th {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        background-color: rgb(43, 63, 63);
+        background-color: rgb(var(--lighter-accents));
         color: white;
         width: 100%;
         margin-bottom: 5px;
@@ -204,7 +211,7 @@ th {
 
     .base-info .border-block {
         border: none;
-        background-color: rgb(43, 63, 63);
+        background-color: rgb(var(--lighter-accents));
     }
 
     .base-info-flex {
@@ -304,7 +311,7 @@ th {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        background-color: rgb(43, 63, 63);
+        background-color: rgb(var(--lighter-accents));
         color: white;
         width: 100%;
         margin-bottom: 5px;
@@ -312,7 +319,7 @@ th {
 
     .base-info .border-block {
         border: none;
-        background-color: rgb(43, 63, 63);
+        background-color: rgb(var(--lighter-accents));
     }
 
     .base-info-flex {
@@ -378,7 +385,7 @@ th {
     }
 
     .base-info .border-block {
-        border: 2px solid darkred;
+        border: 2px solid rgb(var(--border-colour));
         background-color: white;
     }
 
@@ -588,7 +595,7 @@ th {
 }
 
 .char-top {
-    background-color: rgb(26, 41, 41);
+    background-color: rgb(var(--dark-accents));
     color: white;
     padding: 10px;
     margin-bottom: 2px;
@@ -596,7 +603,7 @@ th {
 
 .char-icon {
     max-width: 100px;
-    border: 2px solid darkred;
+    border: 2px solid rgb(var(--border-colour));
 }
 
 .hp-input {
@@ -643,7 +650,7 @@ th {
 }
 
 .stat-stat {
-    border: 2px solid darkred;
+    border: 2px solid rgb(var(--border-colour));
     border-radius: 20px;
     width: 40px;
 }
@@ -695,7 +702,7 @@ th {
 }
 
 .save-prof {
-    border: 2px solid rgba(139, 0, 0, 0.479);
+    border: 2px solid rgb(var(--border-colour) / 0.479);
     height: 2.2rem;
     width: 30px;
     padding: 5px;
@@ -703,7 +710,7 @@ th {
 }
 
 .save-txt {
-    border: 2px solid rgba(139, 0, 0, 0.479);
+    border: 2px solid rgb(var(--border-colour) / 0.479);
     padding: 5px;
     border-left: none;
     font-family: 'Roboto Mono';
@@ -712,7 +719,7 @@ th {
 }
 
 .save-mod {
-    border: 2px solid rgba(139, 0, 0, 0.479);
+    border: 2px solid rgb(var(--border-colour) / 0.479);
     padding: 5px;
     border-left: none;
     height: 2.2rem;
@@ -728,14 +735,14 @@ th {
 }
 
 .senses-mod {
-    border: 2px solid rgba(139, 0, 0, 0.479);
+    border: 2px solid rgb(var(--border-colour) / 0.479);
     padding: 5px;
     border-top-left-radius: 15px;
     font-weight: bold;
 }
 
 .senses-txt {
-    border: 2px solid rgba(139, 0, 0, 0.479);
+    border: 2px solid rgb(var(--border-colour) / 0.479);
     padding: 5px;
     border-left: none;
     border-bottom-right-radius: 15px;

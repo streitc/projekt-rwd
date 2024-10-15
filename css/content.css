@@ -12,6 +12,7 @@ body {
     background-size: auto;
     background-repeat: no-repeat;
     margin-bottom: 55px;
+    background-attachment: fixed;
 }
 
 .main {
@@ -21,12 +22,11 @@ body {
 }
 
 .full-screen-block {
-    min-height: 272px;
+    min-height: 265px;
     border: 2px solid darkred;
-    padding: 5px;
-    margin-right: 5px;
+    padding: 10px 10px 0px 10px;
     margin-bottom: 5px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
     max-width: 1200px;
 }
 
@@ -35,7 +35,7 @@ body {
     padding: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .small-block {
@@ -58,6 +58,15 @@ body {
     padding: 5px;
 }
 
+.health {
+    min-width: 75px;
+}
+
+.health-phone {
+    font-size: 0.9rem;
+    min-width: 60px;
+}
+
 .insp-icon {
     cursor: pointer;
     color: white;
@@ -67,10 +76,6 @@ body {
 
 .insp-icon:hover {
     color: rgba(128, 128, 128, 0.699) !important;
-}
-
-p {
-    margin-left: 5px;
 }
 
 table {
@@ -114,7 +119,7 @@ th {
 }
 
 .navbar .active {
-    background-color:rgb(78, 121, 121);
+    background-color: rgb(78, 121, 121);
     color: white;
 }
 
@@ -194,6 +199,7 @@ th {
         background-color: rgb(43, 63, 63);
         color: white;
         width: 100%;
+        margin-bottom: 5px;
     }
 
     .base-info .border-block {
@@ -251,6 +257,11 @@ th {
     .skill-bonus {
         font-size: x-large;
     }
+
+    .attack-notes,
+    .collapse {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 615px) {
@@ -296,6 +307,7 @@ th {
         background-color: rgb(43, 63, 63);
         color: white;
         width: 100%;
+        margin-bottom: 5px;
     }
 
     .base-info .border-block {
@@ -404,6 +416,10 @@ th {
 
     .actions {
         min-width: 610px;
+    }
+
+    .attack-notes {
+        width: 33%;
     }
 
     h4,
@@ -771,7 +787,6 @@ th {
 .attack-notes {
     font-size: smaller;
     color: grey;
-    width: 33%;
 }
 
 .underlined-item {
@@ -870,7 +885,7 @@ h6 {
     text-align: right;
 }
 
-.about-img {    
+.about-img {
     margin-right: 10px;
     width: 100px;
     height: 258px;

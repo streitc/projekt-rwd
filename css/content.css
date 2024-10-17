@@ -176,6 +176,7 @@ th {
         font-family: 'Roboto Condensed';
         text-transform: uppercase;
         font-weight: bold;
+        font-size: 0.96rem;
     }
 
     .collapsible.active,

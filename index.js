@@ -37,6 +37,7 @@ async function injectHTML(filePath, elem) {
     }
 }
 
+
 /**
  * Function used to process all HTML tags of the following
  * format: <div include="<filename>"></div>
@@ -55,7 +56,12 @@ async function injectAll() {
     }
 }
 
-function myFunction() {
+
+/**
+ * Function used to switch between normal navigation bar
+ * and burger button navigation bar
+ */
+function setResponsiveNavbar() {
     var x = document.getElementById("myNavbar");
     if (x.className === "navbar") {
         x.className += " responsive";
@@ -64,6 +70,11 @@ function myFunction() {
     }
 }
 
+
+/**
+ * Function used to highlight navigationbar button the user
+ * is currently on
+ */
 function setActiveNav() {
     var path = this.location.pathname;
     var nav = document.getElementsByClassName("navigation");
@@ -83,36 +94,52 @@ function setActiveNav() {
     }
 }
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
 
-for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
-        } else {
-            content.style.display = "block";
-        }
-    });
+/**
+ * Function used to show or hide the content of the collapsible subsections
+ * in mobile phone screens
+ */
+function setCollapsibleDisplay() {
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
 }
 
-var inspiration = document.getElementsByClassName("insp-icon");
-var i;
 
-for (i = 0; i < inspiration.length; i++) {
-    inspiration[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        if (this.style.color === "white" || this.style.color === "") {
-            this.style.color = "black";
-        } else {
-            this.style.color = "white";
-        }
-    });
+/**
+ * Function used to make the inspiration icon clickable
+ */
+function addInspirationEvent() {
+    var inspiration = document.getElementsByClassName("insp-icon");
+    var i;
+
+    for (i = 0; i < inspiration.length; i++) {
+        inspiration[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            if (this.style.color === "white" || this.style.color === "") {
+                this.style.color = "black";
+            } else {
+                this.style.color = "white";
+            }
+        });
+    }
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
     await injectAll()
     setActiveNav();
 })
+
+setCollapsibleDisplay();
+addInspirationEvent();

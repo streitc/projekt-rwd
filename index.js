@@ -136,6 +136,9 @@ function addInspirationEvent() {
     }
 }
 
+/** wait until all DOM content is loaded (especially the parts that get injected later) 
+ * to set active nav tab
+*/
 document.addEventListener("DOMContentLoaded", async () => {
     await injectAll()
     setActiveNav();

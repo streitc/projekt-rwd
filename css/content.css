@@ -593,6 +593,16 @@ th {
     .action-flex {
         display: flex;
     }
+
+    .actions {
+        min-width: 590px;
+    }
+}
+
+@media only screen and (min-width: 1340px) {
+    .defenses-conditions-block {
+        width: 60.49%;
+    }
 }
 
 .char-top {
